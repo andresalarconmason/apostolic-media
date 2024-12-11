@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Website for Apostolic Media, offering liturgical art services">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Apostolic Media</h2>
+        <p>Custom liturgical and devotional art.</p>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h3>Services</h3>
+            <ul>
+                <li>Woodburned Icons</li>
+                <li>Paintings</li>
+                <li>Relief Carving</li>
+                <li>Wood Reliquaries</li>
+            </ul>
+        </section>
+        <section id="process">
+            <h3>Icon Process</h3>
+            <p>[slideshow here]</p>
+        </section>
+        <section id="commission">
+            <h3>Commission</h3>
+            <form onsubmit="handleSubmit(event)">
+                <p>Fill out form below to commission. We will reach out afterwards.</p>
+                <label for="first_name">First Name:</label>
+                <br>
+                <input type="text" id="first_name" name="first_name">
+                <br>
+                <label for="last_name">Last Name:</label>
+                <br>
+                <input type="text" id="last_name" name="last_name">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="phone">Phone:</label>
+                <br>
+                <input type="text" id="phone" name="phone">
+                <br><br>
+                    <fieldset>
+                        <legend>Please select service type:</legend>
+                        <input type="radio" id="icon" name="service">
+                        <label for="icon">Woodburned Icon</label>
+                        <br>
+                        <input type="radio" id="paint" name="service">
+                        <label for="paint">Painting</label>
+                        <br>
+                        <input type="radio" id="relief" name="service">
+                        <label for="relief">Relief Carving</label>
+                        <br>
+                        <input type="radio" id="relic" name="service">
+                        <label for="relic">Reliquary</label>
+                    </fieldset>
+                <br>
+                <label for="desc">Name the saint, image, or describe the scene:</label>
+                <br>
+                <input type="text" id="desc" name="description">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
